@@ -1,0 +1,91 @@
+ /* The grid: Four equal columns that floats next to each other */
+.row {
+  outline: 3px solid green;
+  display: flex;
+  overflow-x: scroll;
+  column-gap: 1rem;
+}
+.column {
+  outline: 2px solid red;
+  //float: left;
+  width: 14rem;
+  height: 12rem;
+  //padding: 0 0.5rem;
+  background-color: lightcyan;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-areas:
+    "caption-type"
+    "caption-description";
+  justify-items: center;
+  align-content: space-between;
+}
+.column > span.description {
+  line-height: 1.3;
+  padding: 0 .3rem 0.5rem;
+  outline: 1px solid;
+  grid-area: caption-description;
+}
+.column > div.descr_shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  outline: 1px solid;
+  grid-area: caption-description;
+}
+.column > .caption-type {
+  background-color: teal;
+  padding: 1rem;
+  outline: 1px solid;
+  grid-area: caption-type;
+  justify-self: end;
+  border-radius: 20px;
+}
+
+/* Style the images inside the grid */
+/*.column img {
+  outline: 2px solid orange;
+  opacity: 0.8;
+  cursor: pointer;
+}*/
+
+/*.column img:hover {
+  opacity: 1;
+}*/
+
+/* Clear floats after the columns */
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  border: 5px solid;
+}*/
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  outline: 5px solid black;
+  position: relative;
+  //display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  outline: 10px solid orange;
+}
+
+/* Closable button inside the image */
+.container > span.closebtn {
+  color: #000;
+  outline: 5px solid red;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  //color: white;
+  font-size: 2.3rem;
+  cursor: pointer;
+} 
