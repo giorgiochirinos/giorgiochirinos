@@ -33,7 +33,7 @@
   outline: 1px solid;
   grid-area: caption-description;
 }
-.column > .caption-type {
+.column > span.caption-lang {
   background-color: teal;
   padding: 1rem;
   outline: 1px solid;
@@ -41,51 +41,43 @@
   justify-self: end;
   border-radius: 20px;
 }
+.column > span.video-type {
+  background-color: teal;
+  padding: 1rem;
+  outline: 1px solid;
+  grid-area: caption-type;
+  justify-self: start;
+  border-radius: 20px;
+}
 
-/* Style the images inside the grid */
-/*.column img {
-  outline: 2px solid orange;
-  opacity: 0.8;
-  cursor: pointer;
-}*/
-
-/*.column img:hover {
-  opacity: 1;
-}*/
-
-/* Clear floats after the columns */
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  border: 5px solid;
-}*/
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
+.container > * {
+  outline: 4px solid red;
+}
 .container {
   outline: 5px solid black;
   position: relative;
+  width: min(680px, 90vw);
+  max-width: 680px;
+  min-width: 20rem;
+  margin: 2rem auto;
   //display: none;
 }
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-  outline: 10px solid orange;
+.container > video#expandedVid {
+  //background-color: teal;
+  object-fit: cover; /* or 'contain' */
+  width: 100%;
+  height: 100%;
 }
-
 /* Closable button inside the image */
 .container > span.closebtn {
   color: #000;
-  outline: 5px solid red;
+  //outline: 5px solid red;
   position: absolute;
   top: 10px;
   right: 15px;
   //color: white;
   font-size: 2.3rem;
   cursor: pointer;
-} 
+}
