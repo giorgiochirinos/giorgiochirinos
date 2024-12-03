@@ -1,1 +1,3 @@
-export default const name = "square";
+const name = "square";
+
+export { name };
