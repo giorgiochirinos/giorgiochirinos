@@ -23,9 +23,11 @@ self.addEventListener('fetch', (event) => {
       .then((response) => {
         // Return cached resource if found
         if (response) {
+          console.log('Returned from cache');
           return response;
         }
         // Otherwise, fetch from the network
+        console.log('Not in cache: Fetched');
         return fetch(event.request);
       })
   );
