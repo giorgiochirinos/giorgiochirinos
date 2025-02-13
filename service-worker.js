@@ -7,27 +7,33 @@ const ASSETS_TO_CACHE = [
 
 // Install the service worker and cache assets
 self.addEventListener('install', (event) => {
+  console.log('Service Worker: Installing...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
-        console.log('Opened cache');
-        return cache.addAll(ASSETS_TO_CACHE);
+        console.log('Service Worker: Cache opened');
+        return cache.addAll(ASSETS_TO_CACHE)
+          .then(() => {
+            console.log('Service Worker: Assets cached');
+          })
+          .catch((err) => {
+            console.error('Service Worker: Failed to cache assets', err);
+          });
       })
   );
 });
 
 // Serve cached assets when requested
 self.addEventListener('fetch', (event) => {
+  console.log('Service Worker: Fetching', event.request.url);
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
-        // Return cached resource if found
         if (response) {
-          console.log('Returned from cache');
+          console.log('Service Worker: Returning from cache', event.request.url);
           return response;
         }
-        // Otherwise, fetch from the network
-        console.log('Not in cache: Fetched');
+        console.log('Service Worker: Not in cache, fetching from network', event.request.url);
         return fetch(event.request);
       })
   );
