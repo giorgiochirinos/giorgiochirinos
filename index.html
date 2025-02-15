@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Giorgio Chirinos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- The grid: four columns -->
+  <div class="row">
+    <div class="column">
+      <span class="caption-lang">JP to EN</span>
+      <span class="video-type">AUDIO</span>
+      <div class="descr_shadow"></div>
+      <span class="description">some description of the video asdasdasdada adsdasdsa adas das a dsasdads</span>
+    </div>
+    <div class="column">
+    </div>
+    <div class="column">
+    </div>
+    <div class="column">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Expanded image -->
+    <video id="expandedVid" controls> 
+    </video>
+    <!-- Close the image -->
+    <span class="closebtn">&times;</span>
+  </div>
+  <script src="service-worker"></script>
+  <script src="init.js"></script>
+  <script src="columns.js"></script>
+  <script src="video.js"></script>
+</body>
+</html>
