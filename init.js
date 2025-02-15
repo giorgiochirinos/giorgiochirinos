@@ -7,6 +7,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `1`;
 videoElem = document.createElement('VIDEO');
@@ -424,6 +425,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `2`;
 videoElem = document.createElement('VIDEO');
@@ -476,6 +478,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `3`;
 videoElem = document.createElement('VIDEO');
@@ -852,6 +855,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `4`;
 videoElem = document.createElement('VIDEO');
@@ -1228,6 +1232,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `5`;
 videoElem = document.createElement('VIDEO');
@@ -1604,6 +1609,7 @@ column = document.createElement('DIV')
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
+im.classList.add("column");
 column.appendChild(im);
 column.id = `6`;
 videoElem = document.createElement('VIDEO');
