@@ -4,12 +4,12 @@ let videoList = {};
 let videoElem = null;
 let track = null;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `1`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `1`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
@@ -422,12 +422,12 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`1`] = videoElem;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `2`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `2`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
@@ -475,12 +475,12 @@ track.addCue(new VTTCue(218.61, 221.69, `はい。エルサレル資局の田村
 container.appendChild(column);
 videoList[`2`] = videoElem;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `3`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `3`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
@@ -852,12 +852,12 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`3`] = videoElem;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `4`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `4`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
@@ -1229,12 +1229,12 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`4`] = videoElem;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `5`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `5`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
@@ -1606,12 +1606,12 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`5`] = videoElem;
 column = document.createElement('DIV')
-column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
 column.appendChild(im);
 column.id = `6`;
+column.classList.add("column");
 videoElem = document.createElement('VIDEO');
 videoElem.id = `6`;
 videoElem.src = `https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614`;
