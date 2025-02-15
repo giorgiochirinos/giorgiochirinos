@@ -4,10 +4,10 @@ let videoList = {};
 let videoElem = null;
 let track = null;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `1`;
 videoElem = document.createElement('VIDEO');
@@ -422,10 +422,10 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`1`] = videoElem;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `2`;
 videoElem = document.createElement('VIDEO');
@@ -475,10 +475,10 @@ track.addCue(new VTTCue(218.61, 221.69, `はい。エルサレル資局の田村
 container.appendChild(column);
 videoList[`2`] = videoElem;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `3`;
 videoElem = document.createElement('VIDEO');
@@ -852,10 +852,10 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`3`] = videoElem;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `4`;
 videoElem = document.createElement('VIDEO');
@@ -1229,10 +1229,10 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`4`] = videoElem;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `5`;
 videoElem = document.createElement('VIDEO');
@@ -1606,10 +1606,10 @@ track.addCue(new VTTCue(2344.937, 2347.437, `Terjemahan subtitle oleh Dea Anindy
 container.appendChild(column);
 videoList[`5`] = videoElem;
 column = document.createElement('DIV')
+column.classList.add("column");
 im = new Image();
 im.src = `https://static.sonicbowl.cloud/img/podcast/5f943cf5-7d2c-4349-9ed6-0db8b1522437-20241013235131.jpg`;
 im.alt = `グローバルニュース DAILY BRIEF supported by GRIC2024`;
-im.classList.add("column");
 column.appendChild(im);
 column.id = `6`;
 videoElem = document.createElement('VIDEO');
