@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <video-wrapper>
+  </video-wrapper>
+  <row-wrapper>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+    <card-v1-component>
+    </card-v1-component>
+  </row-wrapper>
+  <script type="module" src="./../video-v2-component/index.js" defer>
+  </script>
+  <script type="module" src="./../row-v1-component/index.js" defer>
+  </script>
+  <script type="module" src="./index.js" defer>
+  </script>
+  <script type="module" defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const v1 = document.querySelector('card-v1-component');
+
+      v1.dataset.id = "1"
+      v1.dataset.ch_title = "some channel title";
+      v1.dataset.ch_image_url = "https://opengameart.org/sites/default/files/screenshot_tileset.png";
+      v1.dataset.ch_link = "channel link";
+      v1.dataset.ch_category = "some category";
+      v1.dataset.ch_lang = "English";
+      v1.dataset.ch_owner_name = "some owner name";
+      v1.dataset.ch_owner_email = "some owner email";
+      v1.dataset.ch_copyright = "some copyright";
+      v1.dataset.it_title = "some item title";
+      v1.dataset.it_descr = "some description";
+      v1.dataset.it_link = "some item link";
+      v1.dataset.it_media_type = "some media type";
+      v1.dataset.it_media_url = "some media url";
+      v1.dataset.it_pub_date = "some date";
+      v1.dataset.it_duration = "some duration";
+      v1.dataset.caption_language = "some category";
+
+      document.addEventListener('column-event', (e) => console.log(e.detail.target))
+    })
+  </script>
+</body>
+</html>

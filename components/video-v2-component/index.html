@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  </style>
+</head>
+<body>
+  <video id="video-player" controls>
+    <source src="https://feed.sonicbowl.cloud/audio/d6d2d648-f292-48bc-b1f3-6f8cb3af0278/audio.mp3?updated=1726098614" type="audio/mp3">
+    <!-- You can add multiple subtitle tracks -->
+    <track label="English" kind="subtitles" srclang="en" src="./example-subtitle-file-en.txt" default>
+    <track label="Spanish" kind="subtitles" srclang="es" src="./example-subtitle-file-es.txt">
+    Your browser does not support HTML5 video.
+  </video>
+  <video-wrapper>
+  </video-wrapper>
+
+  <script type="module" src=./index.js>
+  </script>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const v = document.querySelector('video');
+      v.id = 6;
+      const c = document.querySelector('video-wrapper');
+      c.video = v;
+      console.log(c)
+      console.log('here')
+    });
+  </script>
+
+</body>
+</html>

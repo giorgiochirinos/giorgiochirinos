@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <nav-v2-component>
+    <a slot="menu-item" href="#" class="active">Home</a>
+    <a slot="menu-item" href="#">News</a>
+    <a slot="menu-item" href="#">Contact</a>
+    <a slot="menu-item" href="#">About</a>
+  </nav-v2-component>
+  <button>
+    toggle active
+  </button>
+
+  <script defer type="module" src="./index.js">
+  </script>
+  <script defer>
+    // Import the custom element definition
+    //import './index.js';
+
+    // Wait for the custom element to be defined and rendered
+    window.addEventListener('DOMContentLoaded', () => {
+      const nav = document.querySelector('nav-v2-component');
+      
+      // Now you can access the shadowRoot
+      
+      // If you want to query elements inside the shadow root
+      //const slot = nav.shadowRoot.querySelector('slot');
+      //const menus = Array.from(slot.assignedNodes());
+      //
+      //function getRandomInt(n) {
+      //  return Math.floor(Math.random() * (n + 1));
+      //}
+      //function toggleActive() {
+      //  menus.forEach((el) => {
+      //    el.classList.remove("active");
+      //  });
+      //  const n = getRandomInt(menus.length - 1)
+      //  menus[n].classList.add('active');
+      //  console.log(n);
+      //}
+      //document.querySelector('button').addEventListener('click', toggleActive);
+    });
+  </script>
+</body>
+</html>

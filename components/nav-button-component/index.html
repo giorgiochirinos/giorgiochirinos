@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+
+<p>Click on the Menu Icon to transform it to "X":</p>
+<nav-button-component>
+</nav-button-component>
+
+<script src="./index.js" type="module">
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+
+  const mybtn = document.querySelector('nav-button-component');
+  console.log(mybtn);
+  mybtn.addEventListener('nav-button-event', (e) => {
+    console.log('Event received:', e.detail.state); // e.detail.state = true/false
+    // Handle menu open/close logic here
+  });
+  document.body.addEventListener("nav-button-event", (event) => {
+    console.log("Event received outside shadow DOM:", event.detail);
+  });
+
+  });
+</script>
+
+</body>
+</html>
